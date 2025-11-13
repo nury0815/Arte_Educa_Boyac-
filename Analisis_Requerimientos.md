@@ -1,6 +1,7 @@
 # Análisis de Requerimientos Técnicos — CreaDigital Boyacá
 **Autora:** Nury Montañez  
 **Institución:** Universidad Nacional Abierta y a Distancia (UNAD)  
+**Materia:** Proyecto de grado
 **Versión:** 1.0 — Paquete TRL5  
 **Fecha:** 2025-11-13
 
