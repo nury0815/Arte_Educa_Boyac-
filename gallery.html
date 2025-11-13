@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galería - CreaDigital Boyacá</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Galería CreaDigital Boyacá</h1>
+    <nav><a href="index.html">Inicio</a></nav>
+  </header>
+
+  <main class="container">
+    <section class="gallery" id="gallery"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> CreaDigital Boyacá</p>
+  </footer>
+
+  <script>
+    const dummy = [
+      {title:'Paisaje rural', author:'Ana', img:'assets/demo1.png'},
+      {title:'Música y color', author:'Juan', img:'assets/demo2.png'},
+      {title:'Tradición viva', author:'María', img:'assets/demo3.png'}
+    ];
+    const g = document.getElementById('gallery');
+    dummy.forEach(it=>{
+      const card = document.createElement('div');
+      card.className='card';
+      card.innerHTML = `<img src="${it.img}" alt=""><h4>${it.title}</h4><p>${it.author}</p>`;
+      g.appendChild(card);
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

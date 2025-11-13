@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CreaDigital Boyacá - Demo básico</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>CreaDigital Boyacá</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="gallery.html">Galería</a>
+      <a href="about.html">Acerca</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Aprende, crea y expón</h2>
+      <p>Plataforma inclusiva para educación y arte en Boyacá.</p>
+      <button id="openRegister" class="btn-primary">Registrarse (simulado)</button>
+    </section>
+
+    <section id="modules" class="modules">
+      <article>
+        <h3>Módulos educativos</h3>
+        <p>Lecciones interactivas con multimedia.</p>
+      </article>
+      <article>
+        <h3>Galería de arte</h3>
+        <p>Expón tus obras y recibe retroalimentación.</p>
+      </article>
+      <article>
+        <h3>Convocatorias</h3>
+        <p>Talleres y oportunidades laborales.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> CreaDigital Boyacá</p>
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Registro (simulado)</h3>
+      <form id="registerForm">
+        <label>Nombre<input name="name" required /></label>
+        <label>Edad<input name="age" type="number" /></label>
+        <label>Rol
+          <select name="role">
+            <option>Estudiante</option><option>Artista</option><option>Docente</option>
+          </select>
+        </label>
+        <button type="submit" class="btn-primary">Enviar</button>
+        <button type="button" id="closeModal">Cerrar</button>
+      </form>
+      <div id="regMessage"></div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
